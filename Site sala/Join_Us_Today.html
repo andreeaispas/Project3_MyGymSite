@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us today &#128513 </title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-color: #F6BE00;
+        }
+       
+        .first_paragraph {
+            font-size: 30px;
+        }
+        .second_paragraph {
+            font-size: 25px;
+        }
+        .container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .Membership {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: solid black;
+        background-color: #DADBDD;
+        width: 400px;
+       }
+      
+       .button{
+        background-color: #50C878;
+        border: solid black;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+       }
+       /* Customize the label (the container) */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+  border: solid black;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #50C878;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h1">Join us today</h1>
+    <p class="first_paragraph">What plan would you prefer?</p>
+    <p class="second_paragraph">Choose your favorite:</p>
+    <div class="container">
+        <div class="Membership">
+          <p>Membership GYM:</p>
+        <label class="container1">adults: 150RON
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">students: 120RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">children: 70RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">1 day Pass: 30RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <br>
+        <label class="container1">Kineto: 30RON/session
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <p>Aerobic/Cycling Class</p>
+        <label class="container1">1 session:30RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">4 sessions:90RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">8 sessions:140RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container1">12 sessions: 180RON
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        </div>
+    </div>
+
+    <button type="button" class="button" onclick="alert('Payment will be made by card or cash at the reception of our Gym. Thank you!');"><b>Go to Payment</b></button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+    background-color: #F6BE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) and (min-width: 576px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+.button {
+    background: none;
+    border: none;
+}
+.styled-paragraph {
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    margin: 0;
+    margin-left: 10%;
+    
+}
+
+.image-between {
+    margin: -10px;
+    width: 120px;
+   max-width: 100%;
+}
+
+.second-paragraph {
+    margin-top: 10px;
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+.third-paragraph {
+    margin-top: -35px;
+    font-size: 20px;
+    color: grey;
+    margin-left: 5%;
+}
+
+.forth-paragraph {
+    font-size: 130px;
+    margin-top: -25px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+    padding-left: 120px;
+}
+
+.center-div {
+    font-size: 230px;
+}
+
+.right-div {
+    width: 500px;
+}
+.left-div {
+    width: 600px;
+}
